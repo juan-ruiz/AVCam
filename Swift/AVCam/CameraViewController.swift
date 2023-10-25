@@ -241,7 +241,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
         
         // Add an audio input device.
         do {
-            let audioDevice = AVCaptureDevice.default(for: .audio)
+            let faudioDevice = AVCaptureDevice.default(for: .audio)
             let audioDeviceInput = try AVCaptureDeviceInput(device: audioDevice!)
             
             if session.canAddInput(audioDeviceInput) {
